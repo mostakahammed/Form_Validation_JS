@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  background-color: whitesmoke;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.heading {
+  text-align: center;
+  padding: 20px 0px;
+}
+.heading h1 {
+  font-size: 1.5rem;
+  color: #0f2027;
+}
+.form_control {
+  position: relative;
+  padding-bottom: 22px;
+  width: 100%;
+}
+.form_control label {
+  display: inline-block;
+  padding: 0px 0px 5px 5px;
+  color: #333;
+}
+.form_control input {
+  margin: 0px 3px;
+  padding: 8px;
+  font-family: inherit;
+  color: #0f2027;
+  border: 1px solid #eee;
+  width: 100%;
+  transition: 0.3s all ease-in-out;
+}
+.form_control input:focus {
+  outline: none;
+  border: 1px solid #2c5364;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.form_control .error {
+  color: #ee3405;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 5px;
+  font-size: .9rem;
+}
+
+.form_control.error input {
+  border: 1px solid #ee3405;
+  border-radius: 4px;
+}
+.form_control.success input {
+  border: 1px solid #008000;
+  border-radius: 4px;
+}
+.registration {
+  width: calc(100% - 10px);
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 20px auto;
+  display: block;
+  border: none;
+  background-color: #0f2027;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.registration:focus {
+  background-color: #203a43;
+}
